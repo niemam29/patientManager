@@ -50,7 +50,7 @@ describe('Patient class tests', () => {
 
   test('printUnderageReport - should call console.log with correct values', () => {
     console.log = jest.fn()
-    // I could also write the print function to return string, and test it that way but i thought this would
+    // I could also write the print function to return string, and test it that way but I thought this would
     // be a good example for mocking
     const patientA: Patient = new Patient('John Smith', 40, [
       dependentA,

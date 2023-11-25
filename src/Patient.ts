@@ -46,11 +46,11 @@ export class Patient {
   getUnderageDependent() {
     let report = `${this.getFirstName()}, ${this.getSurname()} - `
     this.getUnderAgeDependents().forEach((dependent, i) => {
-      let dependetPart = `${dependent.name.substring(
+      let dependentPart = `${dependent.name.substring(
         0,
         dependent.name.indexOf(' ')
       )}(${dependent.age})`
-      report += dependetPart
+      report += dependentPart
       if (i !== this.getUnderAgeDependents().length - 1) {
         report += ', '
       }
