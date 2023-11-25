@@ -1,2 +1,10 @@
 node_modules
 yarn.lock
+.yarn
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.sublime/
+.sass-cache/
+dist/
