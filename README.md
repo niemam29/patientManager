@@ -15,4 +15,4 @@ I have set up pipeline using GitHub Actions. It includes installing dependencies
 
 [![Actions Status](https://github.com/niemam29/patientManager/workflows/Run%20Tests/badge.svg)](https://github.com/niemam29/patientManager/actions)
 
-You can view the status of the automated tests in the badge above. Feel free to explore the [Actions tab](https://github.com/your-username/your-repo-name/actions) for more details on each run.
+You can view the status of the automated tests in the badge above. Feel free to explore the [Actions tab](https://github.com/niemam29/patientManager/actions) for more details on each run.
