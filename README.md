@@ -3,7 +3,11 @@
 #### `yarn install`
 #### `yarn test`
 
-## Continuous Testing
+### Footnote
+
+There are few comments inside the code about what could be improved if that would be a real world implementation
+
+### Continuous Testing
 
 I have set up pipeline using GitHub Actions. It includes installing dependencies and running tests to ensure the reliability of the codebase.
 

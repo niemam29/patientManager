@@ -17,6 +17,8 @@ export class Patient {
     if (!nameRegex.test(name)) {
       throw new Error("Make sure that you've passed correct name")
     }
+    //There could be also validation in case of number of dependents is more than 5 but i'm not sure if that's
+    //more a requirement or constraint
   }
   getMostRecentDependent() {
     if (this.dependents.length > 0)
@@ -58,6 +60,7 @@ export class Patient {
   }
 }
 
+// This function could go to some other class but as this is just an example i've left it here
 export function printUnderageReport(patient: Patient[]) {
   if (patient.length == 0) {
     throw Error('Please provide patients to print report')

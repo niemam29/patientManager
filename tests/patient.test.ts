@@ -1,32 +1,8 @@
 import { describe, expect, jest, test } from '@jest/globals'
 import { Patient, printUnderageReport } from '../src/Patient'
+import {dependentA, dependentB, dependentC, dependentD, dependentE} from "./dependents.testdata";
 
-const dependentA = {
-  name: 'Jane Smith',
-  age: 36,
-  added: new Date('2019-01-16'),
-}
-const dependentB = {
-  name: 'Joe Smith',
-  age: 12,
-  added: new Date('2019-01-16'),
-}
-const dependentC = {
-  name: 'Sally Smith',
-  age: 10,
-  added: new Date('2020-10-12'),
-}
-const dependentD = {
-  name: 'Levi Smith',
-  age: 43,
-  added: new Date('2021-01-16'),
-}
-const dependentE = {
-  name: 'Gary Smith',
-  age: 43,
-  added: new Date('2021-01-16'),
-}
-
+//2 tests per function feels like there's much more cases to cover
 describe('Patient class tests', () => {
   test('Patient init - should not let create Patient with age under 0', () => {
     expect(() => new Patient('John Kovalski', -43, [])).toThrow(
@@ -74,6 +50,8 @@ describe('Patient class tests', () => {
 
   test('printUnderageReport - should call console.log with correct values', () => {
     console.log = jest.fn()
+    // I could also write the print function to return string, and test it that way but i thought this would
+    // be a good example for mocking
     const patientA: Patient = new Patient('John Smith', 40, [
       dependentA,
       dependentB,
