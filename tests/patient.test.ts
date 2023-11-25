@@ -2,7 +2,8 @@ import { describe, expect, jest, test } from '@jest/globals'
 import { Patient, printUnderageReport } from '../src/Patient'
 import {dependentA, dependentB, dependentC, dependentD, dependentE} from "./dependents.testdata";
 
-//2 tests per function feels like there's much more cases to cover
+//2 tests per function feels like there's much more cases to cover.
+//In real world when there would more tests there would be probably in separated files for clarity
 describe('Patient class tests', () => {
   test('Patient init - should not let create Patient with age under 0', () => {
     expect(() => new Patient('John Kovalski', -43, [])).toThrow(
