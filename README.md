@@ -5,7 +5,7 @@
 
 ### Footnote
 
-There are few comments inside the code about what could be improved if that would be a real world implementation
+There are few comments inside the code about what could be improved if that would be a real world implementation.
 
 ### Continuous Testing
 

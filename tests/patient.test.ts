@@ -4,6 +4,7 @@ import {dependentA, dependentB, dependentC, dependentD, dependentE} from "./depe
 
 //2 tests per function feels like there's much more cases to cover.
 //In real world when there would more tests there would be probably in separated files for clarity
+//Also it would be good to clarify some of the requirements with client
 describe('Patient class tests', () => {
   test('Patient init - should not let create Patient with age under 0', () => {
     expect(() => new Patient('John Kovalski', -43, [])).toThrow(
@@ -51,7 +52,7 @@ describe('Patient class tests', () => {
 
   test('printUnderageReport - should call console.log with correct values', () => {
     console.log = jest.fn()
-    // I could also write the print function to return string, and test it that way but I thought this would
+    // I could also write the print function to return string, and test it that way, but I thought this would
     // be a good example for mocking
     const patientA: Patient = new Patient('John Smith', 40, [
       dependentA,
